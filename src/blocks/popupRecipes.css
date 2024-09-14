@@ -1,0 +1,55 @@
+.popupRecipes {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  color: #000;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
+}
+
+.popupRecipes_opened {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupRecipes__container {
+  background-color: burlywood;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  width: 430px;
+  height: 330px;
+}
+
+.popup__description-bread {
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 15px auto;
+  visibility: hidden;
+}
+
+.popup__description-pasta {
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.popup__description-bread.active,
+.popup__description-pasta.active {
+  visibility: visible;
+}
