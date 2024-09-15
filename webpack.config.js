@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    publicPath: "",
+    publicPath: "/",
   },
   target: ["web", "es5"],
   stats: "errors-only",
@@ -23,6 +23,7 @@ module.exports = {
     open: true,
     liveReload: true,
     hot: false,
+    historyApiFallback: true,
   },
   module: {
     rules: [

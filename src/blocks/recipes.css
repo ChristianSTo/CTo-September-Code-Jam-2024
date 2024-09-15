@@ -1,27 +1,38 @@
+/* General styles for the section */
+.recipes {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the title */
+.recipe__title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the list */
 .recipes__list {
-  display: flex;
-  flex-direction: row;
   list-style-type: none;
   padding: 0;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-.recipe {
-  margin-right: 10px;
-}
-
+/* Styles for the list items */
 .recipe__image {
-  width: 282px;
-  height: 282px;
-  max-width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.recipes {
-  text-align: center;
-}
-
-.recipe-popup__close-button {
+/* .recipe-popup__close-button {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -31,4 +42,4 @@
   background-size: cover;
   border: none;
   transition: opacity 0.3s ease;
-}
+} */

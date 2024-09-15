@@ -124,3 +124,12 @@ section.renderItems();
 // const handleRecipeItemClick = (data) => {
 //   openPopup(data);
 // };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".my-button");
+  if (button) {
+    button.addEventListener("click", () => {
+      console.log("Button clicked!");
+    });
+  }
+});
