@@ -11,10 +11,10 @@
 
 .header__logo {
   width: 50px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header__title {
   font-size: 30px;
-  padding-left: 2%;
+  padding-left: 40px;
 }
