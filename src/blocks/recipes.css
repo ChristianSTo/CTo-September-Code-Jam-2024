@@ -1,71 +1,58 @@
-/* General styles for the section */
-.recipes {
-  background-color: #f8f9fa; /* Light grey background */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Styles for the title */
-.recipe__title {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Styles for the list */
 .recipes__list {
-  list-style-type: none;
-  padding: 0;
   display: flex;
   justify-content: space-around;
+  gap: 50px;
+  padding: 20px 0;
+  list-style-type: none;
 }
 
-/* Styles for the list items */
+.recipe__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
 .recipe__image {
   width: 200px;
   height: 200px;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.recipe__details {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-}
-
-.recipe__item:hover .recipe__details {
-  display: block;
-}
-
-@media screen and (max-width: 480px) {
-  .recipe__image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .recipes__list {
-    display: grid;
-    gap: 20px;
-  }
-}
-
-.recipe__name {
-  font-size: 18px;
-  color: #555;
   margin-bottom: 10px;
+}
+
+.recipe__btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.recipe__btn:hover {
+  background-color: #0056b3;
+}
+
+.recipe__description {
+  display: none;
+}
+
+.recipe__hover:hover .recipe__description {
+  display: block;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.recipe__title {
+  text-align: center;
 }
 
 /* .recipe-popup__close-button {
