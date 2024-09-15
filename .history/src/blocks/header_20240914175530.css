@@ -1,0 +1,10 @@
+.header {
+  color: #000;
+  background-color: silver;
+  margin-bottom: 0;
+}
+
+.header__logo {
+  width: 500px;
+  margin-right: 20px;
+}
