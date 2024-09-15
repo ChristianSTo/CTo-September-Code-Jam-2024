@@ -25,7 +25,7 @@ class Popup {
     this.popup.addEventListener("mousedown", (evt) => {
       evt.stopPropagation();
       if (evt.target === this.popup) {
-        this.close(evt);
+        this.close();
       }
     });
   }

@@ -11,6 +11,7 @@
     />
     <meta name="description" content="Autumn Events" />
     <meta name="keywords" content="Autumn Events, Fall Plans" />
+    <link href="./pages/index.css" type="text/css" rel="stylesheet" />
   </head>
 
   <body class="page">
@@ -44,14 +45,20 @@
       </div>
     </section>
     <!-- popup  -->
-    <div class="popup event-popup">
-      <div class="popup__container event-popup__container">
-        <button class="popup__close-button event-popup__close-button"></button>
+    <div class="popup popup event-popup">
+      <div class="popup__container popup__container event-popup__container">
+        <button
+          class="popup__close-button popup__close-button event-popup__close-button"
+        ></button>
 
-        <img class="popup__image event-popup__image" src="" alt="" />
-        <div class="popup__info event-popup__info">
-          <p class="popup__name event-popup__name"></p>
-          <p class="popup__date event-popup__date"></p>
+        <img
+          class="popup__image popup__image event-popup__image"
+          src=""
+          alt=""
+        />
+        <div class="popup__info popup__info event-popup__info">
+          <p class="popup__name popup__name event-popup__name"></p>
+          <p class="popup__date popup__date event-popup__date"></p>
         </div>
       </div>
     </div>
@@ -63,7 +70,11 @@
         <p class="events__date"></p>
       </li>
     </template>
+<<<<<<< HEAD
+
+=======
     <!-- map -->
+>>>>>>> origin/main
     <section class="map">
       <div class="map__container">
         <div class="map__overlay">Explore your area for events.</div>
@@ -130,5 +141,108 @@
         >
       </div>
     </footer>
+
+    <!-- recipe section -->
+    <section class="recipes">
+      <h2 class="recipe__title">Recipes</h2>
+      <ul class="recipes__list">
+        <!-- Pumpkin Bread Recipe -->
+        <li class="recipe__item">
+          <h3 class="recipe__name">Pumpkin Bread Recipe</h3>
+          <img src="./images/bread.png" alt="Bread" class="recipe__image" />
+          <div class="recipe__details">
+            <div class="recipe__hover">
+              <button class="recipe__btn">Ingredients</button>
+              <div class="recipe__description ingredients">
+                <p>
+                  1 and 3/4 cups (219g) all-purpose flour (spooned & leveled)<br />
+                  1 teaspoon baking soda<br />
+                  2 teaspoons ground cinnamon<br />
+                  1/4 teaspoon ground nutmeg<br />
+                  1/4 teaspoon ground cloves<br />
+                  1/4 teaspoon ground ginger<br />
+                  3/4 teaspoon salt<br />
+                  2 large eggs, at room temperature<br />
+                  1/2 cup (100g) granulated sugar<br />
+                  3/4 cup (150g) packed light or dark brown sugar<br />
+                  1 and 1/2 cups (340g) pumpkin puree (canned or fresh)<br />
+                  1/2 cup (120ml) vegetable oil, canola oil, or melted coconut
+                  oil<br />
+                  1/4 cup (60ml) orange juice<br />
+                  2/3 cup (120g) semi-sweet chocolate chips
+                </p>
+              </div>
+            </div>
+            <div class="recipe__hover">
+              <button class="recipe__btn">How to Cook</button>
+              <div class="recipe__description cook">
+                <p>
+                  Adjust the oven rack to the lower third position and preheat
+                  the oven to 350°F (177°C). Grease a metal 9×5-inch loaf pan
+                  with non-stick spray.<br />
+                  In a large bowl, whisk the flour, baking soda, cinnamon,
+                  nutmeg, cloves, ginger, and salt together.<br />
+                  In a medium bowl, whisk the eggs, sugars, pumpkin, oil, and
+                  orange juice. Mix wet into dry ingredients gently. Fold in
+                  chocolate chips.<br />
+                  Bake for 60–65 minutes, covering halfway with foil to prevent
+                  browning. Let cool before slicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Butternut Squash Alfredo Pasta -->
+        <li class="recipe__item">
+          <h3 class="recipe__name">Butternut Squash Alfredo Pasta</h3>
+          <img src="./images/pasta.png" alt="Pasta" class="recipe__image" />
+          <div class="recipe__details">
+            <div class="recipe__hover">
+              <button class="recipe__btn">Ingredients</button>
+              <div class="recipe__description ingredients">
+                <p>
+                  1 butternut squash, peeled and cubed<br />
+                  1/2 cup heavy cream<br />
+                  2 tablespoons butter<br />
+                  1/4 teaspoon ground nutmeg<br />
+                  Salt to taste<br />
+                  12 oz pasta<br />
+                  1/2 cup grated Parmesan
+                </p>
+              </div>
+            </div>
+            <div class="recipe__hover">
+              <button class="recipe__btn">How to Cook</button>
+              <div class="recipe__description cook">
+                <p>
+                  Add cream, butter, squash, and water to a saucepan. Simmer
+                  until the squash is tender, then puree. Add nutmeg and
+                  salt.<br />
+                  Cook the pasta. Toss with squash sauce and Parmesan, adding
+                  pasta water as needed for consistency. Serve with more
+                  Parmesan and nutmeg.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- //popup Recipes
+    <div class="popupRecipes" id="popupRecipes">
+      <div class="popupRecipes__container">
+        <button class="recipe-popup__close-button"></button>
+        <img class="recipe-popup_image" src="" alt="" />
+      </div>
+    </div>
+    < template for Recipes
+    <template id="recipe-template">
+      <li class="recipes__list-item">
+        <img class="recipe__image" src="" alt="" />
+      </li>
+    </template>
+     <script src="./src/pages/index.js" type="module"></script> -->
   </body>
 </html>
