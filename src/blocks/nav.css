@@ -1,3 +1,8 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 .nav {
   position: absolute;
   right: 50px;
@@ -19,4 +24,28 @@
 
 .nav__link:hover {
   color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    position: absolute;
+    right: 50px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger:hover {
+    transform: scale(1.1);
+  }
+
+  .hamburger div {
+    background-color: burlywood;
+    height: 5px;
+    width: 30px;
+    margin: 3px 0;
+    border-radius: 3px;
+  }
+  .nav {
+    display: none;
+  }
 }
