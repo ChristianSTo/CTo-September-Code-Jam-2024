@@ -1,5 +1,6 @@
 .map {
   overflow: hidden;
+  border: 1px solid #ccc;
   width: 50%;
   height: 100%;
 }
@@ -9,14 +10,13 @@
   justify-content: flex-end;
   align-items: center;
   height: 400px;
-  padding: 20px 60px;
+  padding: 20px;
   box-sizing: border-box;
   background-color: beige;
 }
 
 .map__iframe {
   width: 100%;
-  height: 100%;
   border: none;
   display: block;
 }
@@ -27,20 +27,9 @@
   left: 25%;
   transform: translate(-50%, -50%);
   color: #000;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   text-align: left;
-  padding: 125px 80px 80px;
-}
-
-@media (max-width: 600px;) {
-  .map__section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .map__overlay {
-    margin-bottom: 20px;
-    margin: 0;
-  }
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: beige;
 }

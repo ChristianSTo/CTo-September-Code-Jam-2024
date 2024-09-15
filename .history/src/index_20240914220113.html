@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lord of the Gourds</title>
+    <title>Autumn Plans</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="Christian To, Cassie Asher, Amin Hijaz, Elvin Akhmedov"
-    />
+    <meta name="author" content="Christian To, Cassie, Amin Hijaz, Elvin" />
     <meta name="description" content="Autumn Events" />
     <meta name="keywords" content="Autumn Events, Fall Plans" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
   <body class="page">
@@ -24,16 +23,10 @@
         <h1 class="header__title">Lord of the Gourds</h1>
       </section>
     </header>
-    <!-- nav bar -->
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
     <nav class="nav">
       <ul class="nav__links">
         <li>
-          <a href="#" class="nav__link">Home</a>
+          <a href="#home" class="nav__link">Home</a>
         </li>
         <li>
           <a href="#events" class="nav__link">Events</a>
@@ -50,15 +43,15 @@
         <ul class="events__list"></ul>
       </div>
     </section>
-    <!-- popup  -->
-    <div class="popup event-popup">
-      <div class="popup__container event-popup__container">
-        <button class="popup__close-button event-popup__close-button"></button>
+    <!-- popup for events -->
+    <div class="event-popup">
+      <div class="event-popup__container">
+        <button class="event-popup__close-button"></button>
 
-        <img class="popup__image event-popup__image" src="" alt="" />
-        <div class="popup__info event-popup__info">
-          <p class="popup__name event-popup__name"></p>
-          <p class="popup__date event-popup__date"></p>
+        <img class="event-popup__image" src="" alt="" />
+        <div class="event-popup__info">
+          <p class="event-popup__name">Name</p>
+          <p class="event-popup__date">Date</p>
         </div>
       </div>
     </div>
@@ -82,8 +75,7 @@
         <div class="map__overlay">Explore your area for events.</div>
       </div>
     </section>
-    <!-- footer -->
-    <footer class="footer" id="about">
+    <footer class="footer">
       <img class="footer__logo" src="<%=require('./images/Leaf Logo.png')%>" />
       <div class="footer__names">
         <a href="https://github.com/ChristianSTo" target="_blank"
@@ -96,3 +88,5 @@
     </footer>
   </body>
 </html>
+
+<!-- to run, type "npm run dev" in your console -->
