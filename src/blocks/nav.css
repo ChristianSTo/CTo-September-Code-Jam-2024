@@ -2,6 +2,7 @@
   background-color: #e99f2f;
   padding: 1rem;
   position: relative;
+  z-index: 9999;
 }
 
 .hamburger {
@@ -28,6 +29,7 @@
 .nav__link {
   color: white;
   text-decoration: none;
+  font-family: "EBGaramond-Regular", serif;
   font-size: 18px;
 }
 
