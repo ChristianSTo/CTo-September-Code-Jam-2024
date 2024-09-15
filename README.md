@@ -13,7 +13,8 @@ Lord of the Gourds: Prepare for an autumn journey! Lord of the Gourds provides f
 [Lord of the Gourds](https://christiansto.github.io/CTo-September-Code-Jam-2024/)
 
 # Run it locally
-```git clone git@github.com:ChristianSTo/CTo-September-Code-Jam-2024.git
+```
+git clone git@github.com:ChristianSTo/CTo-September-Code-Jam-2024.git
 cd CTo-September-Code-Jam-2024
 npm install
 npm run dev
