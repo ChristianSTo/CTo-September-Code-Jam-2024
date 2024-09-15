@@ -48,4 +48,12 @@
   .nav {
     display: none;
   }
+  .nav.active {
+    display: block;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
