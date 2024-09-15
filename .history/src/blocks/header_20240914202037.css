@@ -1,0 +1,21 @@
+.header {
+  color: #000;
+  background-color: beige;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.header__title {
+  font-size: 30px;
+  padding-left: 2%;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}

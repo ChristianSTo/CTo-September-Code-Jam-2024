@@ -1,0 +1,36 @@
+.map {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 50%;
+  height: 100%;
+}
+
+.map__section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.map__iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.map__overlay {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: beige;
+}

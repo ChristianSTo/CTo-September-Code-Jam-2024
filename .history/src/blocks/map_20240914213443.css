@@ -1,0 +1,47 @@
+.map {
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+
+.map__section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.map__overlay {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px;) {
+  .map__section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .map__overlay {
+    margin-bottom: 20px;
+    margin: 0;
+  }
+}
