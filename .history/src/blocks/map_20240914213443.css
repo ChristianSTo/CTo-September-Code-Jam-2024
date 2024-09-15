@@ -30,7 +30,8 @@
   font-size: 26px;
   font-weight: bold;
   text-align: left;
-  padding: 125px 80px 80px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (max-width: 600px;) {
