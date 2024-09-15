@@ -70,11 +70,8 @@
         <p class="events__date"></p>
       </li>
     </template>
-<<<<<<< HEAD
 
-=======
     <!-- map -->
->>>>>>> origin/main
     <section class="map">
       <div class="map__container">
         <div class="map__overlay">Explore your area for events.</div>
@@ -87,60 +84,6 @@
         ></iframe>
       </div>
     </section>
-    <!-- videos -->
-    <div class="more">
-      <h2 class="more__title">Greater Insights</h2>
-      <div class="more__container">
-        <iframe
-          class="more__video"
-          src="https://www.youtube.com/embed/Y9Fq-Bo_VJw?si=6XhGpx4EifRFjac9"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          class="more__video"
-          src="https://www.youtube.com/embed/PBOKvg_yVgU?si=qdxj_HISpvtDzhcl"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <!-- footer -->
-    <footer class="footer" id="about">
-      <img class="footer__logo" src="<%=require('./images/Leaf Logo.png')%>" />
-      <div class="footer__names">
-        <a
-          class="footer__name"
-          href="https://github.com/ChristianSTo"
-          target="_blank"
-          >Christian To</a
-        >
-        <a
-          class="footer__name"
-          href="https://github.com/Elvinish"
-          target="_blank"
-          >Elvin Akhmedov</a
-        >
-        <a
-          class="footer__name"
-          href="https://github.com/cassasher"
-          target="_blank"
-          >Cassie Asher</a
-        >
-        <a
-          class="footer__name"
-          href="https://github.com/Ahijaz1"
-          target="_blank"
-          >Amin Hijaz</a
-        >
-      </div>
-    </footer>
 
     <!-- recipe section -->
     <section class="recipes">
@@ -149,7 +92,11 @@
         <!-- Pumpkin Bread Recipe -->
         <li class="recipe__item">
           <h3 class="recipe__name">Pumpkin Bread Recipe</h3>
-          <img src="./images/bread.png" alt="Bread" class="recipe__image" />
+          <img
+            src="<%=require('./images/bread.png')%>"
+            alt="Bread"
+            class="recipe__image"
+          />
           <div class="recipe__details">
             <div class="recipe__hover">
               <button class="recipe__btn">Ingredients</button>
@@ -196,7 +143,11 @@
         <!-- Butternut Squash Alfredo Pasta -->
         <li class="recipe__item">
           <h3 class="recipe__name">Butternut Squash Alfredo Pasta</h3>
-          <img src="./images/pasta.png" alt="Pasta" class="recipe__image" />
+          <img
+            src="<%=require('./images/pasta.png')%>"
+            alt="Pasta"
+            class="recipe__image"
+          />
           <div class="recipe__details">
             <div class="recipe__hover">
               <button class="recipe__btn">Ingredients</button>
@@ -230,19 +181,60 @@
       </ul>
     </section>
 
-    <!-- //popup Recipes
-    <div class="popupRecipes" id="popupRecipes">
-      <div class="popupRecipes__container">
-        <button class="recipe-popup__close-button"></button>
-        <img class="recipe-popup_image" src="" alt="" />
+    <!-- videos -->
+    <div class="more">
+      <h2 class="more__title">Greater Insights</h2>
+      <div class="more__container">
+        <iframe
+          class="more__video"
+          src="https://www.youtube.com/embed/Y9Fq-Bo_VJw?si=6XhGpx4EifRFjac9"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="more__video"
+          src="https://www.youtube.com/embed/PBOKvg_yVgU?si=qdxj_HISpvtDzhcl"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
-    < template for Recipes
-    <template id="recipe-template">
-      <li class="recipes__list-item">
-        <img class="recipe__image" src="" alt="" />
-      </li>
-    </template>
-     <script src="./src/pages/index.js" type="module"></script> -->
+
+    <!-- footer -->
+    <footer class="footer" id="about">
+      <img class="footer__logo" src="<%=require('./images/Leaf Logo.png')%>" />
+      <div class="footer__names">
+        <a
+          class="footer__name"
+          href="https://github.com/ChristianSTo"
+          target="_blank"
+          >Christian To</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/Elvinish"
+          target="_blank"
+          >Elvin Akhmedov</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/cassasher"
+          target="_blank"
+          >Cassie Asher</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/Ahijaz1"
+          target="_blank"
+          >Amin Hijaz</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
