@@ -8,6 +8,8 @@ import pumpkinPatchImage from "../images/pumpkinpatch.png";
 import costumeImage from "../images/costume.png";
 import fallFestivalImage from "../images/fallfestival.png";
 
+import Nav from "../scripts/Nav.js";
+
 import {
   eventPopupSelector,
   eventsContainer,
