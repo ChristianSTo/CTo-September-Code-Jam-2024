@@ -4,7 +4,7 @@
 Amin Hijaz, Cassie Asher, Elvin Akhmedov, Christian To
 
 # Description
-
+Lord of the Gourds: Prepare for an autumn journey! Lord of the Gourds provides fun and exciting recommendations for popular autumn activities. See upcoming events, learn new recipes and engage with the community by exploring your area.
 
 # Design Structure
 [Figma](https://www.figma.com/design/EKtADmcqQ5oBP9f9lgOwDs/SeptemberCodeJam2024?node-id=0-1&node-type=canvas&t=df0nDbtSYhBFV00C-0)
@@ -13,13 +13,13 @@ Amin Hijaz, Cassie Asher, Elvin Akhmedov, Christian To
 [Lord of the Gourds](https://christiansto.github.io/CTo-September-Code-Jam-2024)
 
 # Key Technologies
-HTML and CSS
-JavaScript and Node.js.
-Webpack and Babel
-Deployed on gh-pages
++ HTML and CSS
++ JavaScript and Node.js.
++ Webpack and Babel
++ Deployed on gh-pages
 
 # Members
-[Christian To](https://github.com/ChristianSTo)
-[Elvin Akhmedov](https://github.com/Elvinish)
-[Cassie Asher](https://github.com/cassasher)
-[Amin Hijaz](https://github.com/Ahijaz1)
++ [Christian To](https://github.com/ChristianSTo)
++ [Elvin Akhmedov](https://github.com/Elvinish)
++ [Cassie Asher](https://github.com/cassasher)
++ [Amin Hijaz](https://github.com/Ahijaz1)
