@@ -1,0 +1,19 @@
+.map {
+  width: 1100px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.map__section {
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.map__iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
