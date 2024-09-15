@@ -8,11 +8,26 @@ import pumpkinPatchImage from "../images/pumpkinpatch.png";
 import costumeImage from "../images/costume.png";
 import fallFestivalImage from "../images/fallfestival.png";
 
+//  import Elvin
+import breadRecipesImage from "../images/bread.png";
+import pastaRecipeImage from "../images/pasta.png";
+import ingredientsPasta from "../images/ingredientspasta.png";
+import ingredientsBread from "../images/ingredientsbread.png";
+import Recipe from "../scripts/recipes.js";
+import RecipePopup from "../scripts/RecipePopup.js";
+
 import {
   eventPopupSelector,
   eventsContainer,
   eventsListSelector,
   eventsTemplateSelector,
+} from "../utils/constants.js";
+
+import {
+  recipePopupSelector,
+  RecipesContainer,
+  recipesListSelector,
+  recipesTemplateSelector,
 } from "../utils/constants.js";
 
 const eventData = [
@@ -64,3 +79,48 @@ const section = new Section(
 );
 
 section.renderItems();
+
+// resipes objects Elvin
+
+const createRecipe = (item) => {
+  const recipe = new Recipe({
+    data: item,
+    recipeSelector: recipesTemplateSelector,
+    handleRecipeItemClick: handleRecipeItemClick,
+  });
+  const newRecipe = recipe.getView();
+  section.addItem(newRecipe);
+  return newRecipe;
+};
+
+const resipesData = [
+  {
+    src: breadRecipesImage,
+    alt: "Bread recipe",
+    img: ingredientsBread,
+  },
+  {
+    src: pastaRecipeImage,
+    alt: "Pasta recipe",
+    img: ingredientsPasta,
+  },
+];
+
+const recipeSection = new Section(
+  {
+    items: resipesData,
+    renderer: createRecipe,
+  },
+  recipesListSelector
+);
+
+const recipePopup = new RecipePopup({ popupSelector: recipePopupSelector });
+recipePopup.setEventListeners();
+
+const openPopupRecipe = (data) => {
+  recipePopup.open(data);
+};
+
+const handleRecipeItemClick = (data) => {
+  openPopup(data);
+};

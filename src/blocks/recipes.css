@@ -7,16 +7,28 @@
 }
 
 .recipe {
-  margin-right: 10px; /* Adjust spacing between images as needed */
+  margin-right: 10px;
 }
 
 .recipe__image {
   width: 282px;
   height: 282px;
-  max-width: 100%; /* Ensure images are responsive */
+  max-width: 100%;
   height: auto;
 }
 
 .recipes {
   text-align: center;
+}
+
+.recipe-popup__close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/xIcon.svg") no-repeat center transparent;
+  background-size: cover;
+  border: none;
+  transition: opacity 0.3s ease;
 }

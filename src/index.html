@@ -36,14 +36,14 @@
       </div>
     </section>
     <!-- popup for events -->
-    <div class="event-popup">
-      <div class="event-popup__container">
-        <button class="event-popup__close-button"></button>
+    <div class="popup event-popup">
+      <div class="popup__container event-popup__container">
+        <button class="popup__close-button event-popup__close-button"></button>
 
-        <img class="event-popup__image" src="" alt="" />
-        <div class="event-popup__info">
-          <p class="event-popup__name">Name</p>
-          <p class="event-popup__date">Date</p>
+        <img class="popup__image event-popup__image" src="" alt="" />
+        <div class="popup__info event-popup__info">
+          <p class="popup__name event-popup__name">Name</p>
+          <p class="popup__date event-popup__date">Date</p>
         </div>
       </div>
     </div>
@@ -56,16 +56,10 @@
       </li>
     </template>
     <main class="content">
+      <!-- recipe section -->
       <section class="recipes">
-        <h2>Recipes</h2>
-        <ul class="recipes__list">
-          <li class="recipe">
-            <img src="./images/bread.png" alt="bread" class="recipe__image" />
-          </li>
-          <li class="recipe">
-            <img src="./images/pasta.png" alt="pasta" class="recipe__image" />
-          </li>
-        </ul>
+        <h2 class="recipe__title">Recipes</h2>
+        <ul class="recipes__list"></ul>
       </section>
     </main>
     <footer class="footer"></footer>
@@ -73,37 +67,17 @@
     <!-- //popup Recipes  -->
     <div class="popupRecipes" id="popupRecipes">
       <div class="popupRecipes__container">
-        <div class="popup__description-bread" name="bread">
-          Ingredients<br />
-          1 and 3/4 cups (219g) all-purpose flour (spooned & leveled)<br />
-          1 teaspoon baking soda<br />
-          2 teaspoons ground cinnamon<br />
-          1/4 teaspoon ground nutmeg*<br />
-          1/4 teaspoon ground cloves*<br />
-          1/4 teaspoon ground ginger*<br />
-          3/4 teaspoon salt<br />
-          2 large eggs, at room temperature<br />
-          1/2 cup (100g) granulated sugar<br />
-          3/4 cup (150g) packed light or dark brown sugar<br />
-          1 and 1/2 cups (340g) pumpkin puree (canned or fresh)<br />
-          1/2 cup (120ml) vegetable oil, canola oil, or melted coconut oil<br />
-          1/4 cup (60ml) orange juice*<br />
-          2/3 cup (120g) semi-sweet chocolate chips*
-        </div>
-        <div class="popup__description-pasta" name="pasta">
-          Ingredients<br />
-          3/4 cup heavy cream<br />
-          3 tablespoons unsalted butter, cut into small pieces<br />
-          1 pound butternut squash, cubed (about 4 cups total)<br />
-          1/2 teaspoon freshly grated nutmeg, plus more for serving<br />
-          Kosher salt<br />
-          1 pound fettuccine<br />
-          2 ounces freshly grated Parmesan (about 3/4 cup), plus more for
-          serving<br />
-        </div>
+        <button class="recipe-popup__close-button"></button>
+        <img class="recipe-popup_image" src="" alt="" />
       </div>
     </div>
-    <script src="./src/scripts/index.js" type="module"></script>
+    <!-- template for Recipes -->
+    <template id="recipe-template">
+      <li class="recipes__list-item">
+        <img class="recipe__image" src="" alt="" />
+      </li>
+    </template>
+    <script src="./src/pages/index.js" type="module"></script>
   </body>
 </html>
 

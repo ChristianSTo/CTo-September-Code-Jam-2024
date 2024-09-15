@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.event-popup_open {
+.popup_open {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s, visibility 0.3s ease;
