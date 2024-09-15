@@ -1,6 +1,6 @@
 # CTo-September-Code-Jam-2024
 
-## Team:
+## Team
 Amin Hijaz, Cassie Asher, Elvin Akhmedov, Christian To
 
 # Description
@@ -9,7 +9,7 @@ Lord of the Gourds: Prepare for an autumn journey! Lord of the Gourds provides f
 # Design Structure
 [Figma](https://www.figma.com/design/EKtADmcqQ5oBP9f9lgOwDs/SeptemberCodeJam2024?node-id=0-1&node-type=canvas&t=df0nDbtSYhBFV00C-0)
 
-# Live Website: 
+# Live Website
 [Lord of the Gourds](https://christiansto.github.io/CTo-September-Code-Jam-2024)
 
 # Key Technologies
