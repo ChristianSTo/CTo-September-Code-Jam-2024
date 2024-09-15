@@ -17,7 +17,7 @@ import {
 
 const eventData = [
   {
-    name: "Pumpkin Patch Hunt",
+    name: "Pumpkin Patch",
     date: "October 18",
     src: pumpkinPatchImage,
     alt: "Fall Festival",
