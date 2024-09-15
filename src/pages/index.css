@@ -6,7 +6,11 @@
 @import url(../blocks/map.css);
 @import url(../blocks/events.css);
 @import url(../blocks/popup.css);
+<<<<<<< HEAD
 @import url(../blocks/recipes.css);
 @import url(../blocks/popupRecipes.css);
 @import url(../blocks/events.css);
+=======
+>>>>>>> origin/main
 @import url(../blocks/nav.css);
+@import url(../blocks/more.css);

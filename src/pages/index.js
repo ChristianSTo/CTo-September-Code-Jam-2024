@@ -8,6 +8,7 @@ import pumpkinPatchImage from "../images/pumpkinpatch.png";
 import costumeImage from "../images/costume.png";
 import fallFestivalImage from "../images/fallfestival.png";
 
+<<<<<<< HEAD
 // //  import Elvin
 // import breadRecipesImage from "../images/bread.png";
 // import pastaRecipeImage from "../images/pasta.png";
@@ -15,6 +16,9 @@ import fallFestivalImage from "../images/fallfestival.png";
 // import ingredientsBread from "../images/ingredientsbread.png";
 // import Recipe from "../scripts/recipes.js";
 // import RecipePopup from "../scripts/RecipePopup.js";
+=======
+import Nav from "../scripts/Nav.js";
+>>>>>>> origin/main
 
 import {
   eventPopupSelector,
