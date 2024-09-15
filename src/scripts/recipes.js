@@ -29,40 +29,40 @@
 //   });
 // }
 
-class Recipe {
-  constructor({ data, recipeSelector, handleRecipetItemClick }) {
-    this.link = data.src;
-    this.alt = data.alt;
-    this._recipeSelector = recipeSelector;
-    this._handleRecipeItemClick = handleRecipeItemClick;
-  }
+// class Recipe {
+//   constructor({ data, recipeSelector, handleRecipetItemClick }) {
+//     this.link = data.src;
+//     this.alt = data.alt;
+//     this._recipeSelector = recipeSelector;
+//     this._handleRecipeItemClick = handleRecipeItemClick;
+//   }
 
-  //clone the template element with all its content
-  _getTemplate() {
-    return document
-      .querySelector(this._recipeSelector)
-      .content.querySelector(".recipes__list-item")
-      .cloneNode(true);
-  }
+//   //clone the template element with all its content
+//   _getTemplate() {
+//     return document
+//       .querySelector(this._recipeSelector)
+//       .content.querySelector(".recipes__list-item")
+//       .cloneNode(true);
+//   }
 
-  _setEventListeners() {
-    this._element.addEventListener("click", () => {
-      this._handleRecipeItemClick({
-        src: this.link,
-      });
-    });
-  }
-  getView() {
-    this._element = this._getTemplate();
-    //find the children of the element
-    this._image = this._element.querySelector(".recipe__image");
-    //set the values
-    this._image.src = this.src;
-    this._image.alt = this.alt;
+//   _setEventListeners() {
+//     this._element.addEventListener("click", () => {
+//       this._handleRecipeItemClick({
+//         src: this.link,
+//       });
+//     });
+//   }
+//   getView() {
+//     this._element = this._getTemplate();
+//     //find the children of the element
+//     this._image = this._element.querySelector(".recipe__image");
+//     //set the values
+//     this._image.src = this.src;
+//     this._image.alt = this.alt;
 
-    this._setEventListeners();
-    return this._element;
-  }
-}
+//     this._setEventListeners();
+//     return this._element;
+//   }
+// }
 
-export default Recipe;
+// export default Recipe;

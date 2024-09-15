@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Autumn Plans</title>
+    <title>Lord of the Gourds</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Christian To, Cassie, Amin Hijaz, Elvin" />
+    <meta
+      name="author"
+      content="Christian To, Cassie Asher, Amin Hijaz, Elvin Akhmedov"
+    />
     <meta name="description" content="Autumn Events" />
     <meta name="keywords" content="Autumn Events, Fall Plans" />
-
-    <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
   <body class="page">
     <!-- header -->
-    <header class="header">Autumn Plans</header>
+    <header class="header">
+      <section class="header__section">
+        <img
+          class="header__logo"
+          src="<%=require('./images/Leaf Logo.png')%>"
+        />
+        <h1 class="header__title">Lord of the Gourds</h1>
+      </section>
+    </header>
+    <!-- nav bar -->
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <nav class="nav">
       <ul class="nav__links">
         <li>
-          <a href="#home" class="nav__link">Home</a>
+          <a href="#" class="nav__link">Home</a>
         </li>
         <li>
           <a href="#events" class="nav__link">Events</a>
@@ -35,15 +50,21 @@
         <ul class="events__list"></ul>
       </div>
     </section>
-    <!-- popup for events -->
-    <div class="popup event-popup">
-      <div class="popup__container event-popup__container">
-        <button class="popup__close-button event-popup__close-button"></button>
+    <!-- popup  -->
+    <div class="popup popup event-popup">
+      <div class="popup__container popup__container event-popup__container">
+        <button
+          class="popup__close-button popup__close-button event-popup__close-button"
+        ></button>
 
-        <img class="popup__image event-popup__image" src="" alt="" />
-        <div class="popup__info event-popup__info">
-          <p class="popup__name event-popup__name">Name</p>
-          <p class="popup__date event-popup__date">Date</p>
+        <img
+          class="popup__image popup__image event-popup__image"
+          src=""
+          alt=""
+        />
+        <div class="popup__info popup__info event-popup__info">
+          <p class="popup__name popup__name event-popup__name"></p>
+          <p class="popup__date popup__date event-popup__date"></p>
         </div>
       </div>
     </div>
@@ -62,7 +83,48 @@
         <ul class="recipes__list"></ul>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <section class="map">
+      <div class="map__container">
+        <div class="map__overlay">Explore your area for events.</div>
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13186.732647547964!2d-118.73146134999999!3d34.2821308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1726360026493!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer" id="about">
+      <img class="footer__logo" src="<%=require('./images/Leaf Logo.png')%>" />
+      <div class="footer__names">
+        <a
+          class="footer__name"
+          href="https://github.com/ChristianSTo"
+          target="_blank"
+          >Christian To</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/Elvinish"
+          target="_blank"
+          >Elvin Akhmedov</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/cassasher"
+          target="_blank"
+          >Cassie Asher</a
+        >
+        <a
+          class="footer__name"
+          href="https://github.com/Ahijaz1"
+          target="_blank"
+          >Amin Hijaz</a
+        >
+      </div>
+    </footer>
 
     <!-- //popup Recipes  -->
     <div class="popupRecipes" id="popupRecipes">
@@ -77,8 +139,6 @@
         <img class="recipe__image" src="" alt="" />
       </li>
     </template>
-    <script src="./src/pages/index.js" type="module"></script>
+    <!-- <script src="./src/pages/index.js" type="module"></script> -->
   </body>
 </html>
-
-<!-- to run, type "npm run dev" in your console -->
