@@ -30,17 +30,13 @@
   font-size: 26px;
   font-weight: bold;
   text-align: left;
-  padding: 125px 80px 80px;
 }
 
-@media (max-width: 600px;) {
-  .map__section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
+@media screen and (max-width: 600px;) {
   .map__overlay {
-    margin-bottom: 20px;
-    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 17px;
   }
-}

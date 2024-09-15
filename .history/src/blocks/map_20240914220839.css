@@ -33,7 +33,7 @@
   padding: 125px 80px 80px;
 }
 
-@media (max-width: 600px;) {
+@media (max-width: 600px) {
   .map__section {
     flex-direction: column;
     align-items: flex-start;
