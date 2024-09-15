@@ -2,7 +2,7 @@ import "../pages/index.css";
 import EventPopups from "../scripts/EventPopup.js";
 import Event from "../scripts/Event.js";
 import Section from "../scripts/Section.js";
-
+import Nav from "../scripts/Nav.js";
 import pumpkinPatchImage from "../images/pumpkinpatch.png";
 import costumeImage from "../images/costume.png";
 import fallFestivalImage from "../images/fallfestival.png";
