@@ -2,7 +2,6 @@
   background-color: #e99f2f;
   padding: 1rem;
   position: relative;
-  z-index: 9999;
 }
 
 .hamburger {
@@ -16,6 +15,7 @@
   width: 25px;
   margin: 5px 0;
   transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 .nav__links {
