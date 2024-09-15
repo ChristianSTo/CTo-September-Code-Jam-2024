@@ -355,7 +355,7 @@ template {
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(/faaad004d3fec9f6b77c.woff) format("woff");
+  src: url(faaad004d3fec9f6b77c.woff) format("woff");
 }
 
 @font-face {
@@ -363,7 +363,7 @@ template {
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(/d5f56592054e63be6120.woff) format("woff");
+  src: url(d5f56592054e63be6120.woff) format("woff");
 }
 
 .page {
@@ -679,7 +679,7 @@ template {
   right: 15px;
   width: 30px;
   height: 30px;
-  background: url(/987f58618654c53a8398.svg) no-repeat center transparent;
+  background: url(987f58618654c53a8398.svg) no-repeat center transparent;
   background-size: cover;
   border: none;
   transition: opacity 0.3s ease;
