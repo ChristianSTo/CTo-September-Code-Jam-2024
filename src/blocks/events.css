@@ -6,8 +6,10 @@
 }
 
 .events__title {
+  font-family: "HussarBoldWeb", sans-serif;
+  font-size: 25px;
   text-align: center;
-  margin: 25px auto;
+  margin: 40px auto 25px;
 }
 
 .events__container {
@@ -32,6 +34,8 @@
 
 .events__name,
 .events__date {
+  font-family: "EBGaramond-Regular", serif;
+  font-size: 16px;
   text-align: center;
   margin: 15px 0px 5px;
   transition: all 0.3s ease;
@@ -75,7 +79,7 @@
 
 @media (max-width: 800px) {
   .events__title {
-    margin: 10px auto;
+    margin: 25px auto;
   }
 
   .events__list {
