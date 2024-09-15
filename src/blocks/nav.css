@@ -15,7 +15,7 @@
   width: 25px;
   margin: 5px 0;
   transition: all 0.3s ease;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .nav__links {
