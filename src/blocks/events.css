@@ -7,6 +7,7 @@
 
 .events__title {
   text-align: center;
+  margin: 25px auto;
 }
 
 .events__container {
@@ -16,13 +17,14 @@
   align-items: center;
   margin: 0px;
   padding: 0px;
+  margin-bottom: 25px;
 }
 
 .events__list {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   list-style-type: none;
   text-decoration: none;
@@ -30,20 +32,101 @@
 
 .events__name,
 .events__date {
-  text-align: left;
+  text-align: center;
+  margin: 15px 0px 5px;
+  transition: all 0.3s ease;
 }
 
 .events__list-item {
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 25px 0px 25px 25px;
+  transition: all 0.3s ease;
 }
 
-.events__list-item:hover {
+.events__list-item,
+.events__image,
+.events__name {
+  transform: scale(0.85);
+}
+
+.events__list-item:hover,
+.events__list-item:hover .events__image,
+.events__list-item:hover .events__name,
+.events__list-item:hover .events__date {
   cursor: pointer;
+  transform: scale(1);
 }
 
 .events__image {
   cursor: pointer;
   max-width: 220px;
+  min-width: 220px;
   width: 100%;
   height: 150px;
+  border-radius: 100px 0px 100px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  .events__title {
+    margin: 10px auto;
+  }
+
+  .events__list {
+    flex-direction: column;
+  }
+
+  .events__list-item,
+  .events__image,
+  .events__name {
+    transform: scale(0.9);
+    transition: none;
+  }
+
+  .events__list-item:hover,
+  .events__list-item:hover .events__image,
+  .events__list-item:hover .events__name,
+  .events__list-item:hover .events__date {
+    cursor: pointer;
+    transform: scale(0.92);
+  }
+
+  .events__list-item {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px 25px 0px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events__name,
+  .events__date {
+    font-size: 16px;
+    width: 500px;
+    margin: 0px 10px 0px;
+    transition: all 0.3s ease;
+  }
+
+  .events__name {
+    text-align: left;
+  }
+
+  .events__date {
+    text-align: right;
+  }
+
+  .events__image {
+    min-width: 60px;
+    width: 60px;
+    height: 50px;
+    border-radius: 25px 25px 0px;
+  }
 }
