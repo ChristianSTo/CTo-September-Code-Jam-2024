@@ -24,12 +24,48 @@
 
 /* Styles for the list items */
 .recipe__image {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe__details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.recipe__item:hover .recipe__details {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .recipe__image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .recipes__list {
+    display: grid;
+    gap: 20px;
+  }
+}
+
+.recipe__name {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 /* .recipe-popup__close-button {
